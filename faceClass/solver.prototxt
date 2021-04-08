@@ -1,0 +1,23 @@
+net: "train_val_src.prototxt"
+
+test_iter: 5718
+test_interval: 2000
+test_initialization: false
+
+base_lr: 0.01
+lr_policy: "multistep"
+gamma: 0.1
+momentum: 0.9
+weight_decay: 0.0005
+
+stepvalue: 30000
+stepvalue: 60000
+stepvalue: 120000
+stepvalue: 180000
+max_iter: 200000
+iter_size: 1
+
+display: 200
+snapshot: 2000
+snapshot_prefix: "models/face2d_wudi"
+solver_mode: GPU
